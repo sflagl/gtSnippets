@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+  // Then grab a random number
+  var chance = Math.floor((Math.random() * 10) + 1);
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>js-randomNumber</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>

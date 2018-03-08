@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+			parseFloat()
+
+			//built in javascript function that returns a floating point number (ex. 4.312132313)
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>js-getDecimalNumber</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>

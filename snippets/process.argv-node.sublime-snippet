@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+		console.log(process.argv[2] === process.argv[3]);
+
+		// <!-- example node server.js value1(process.argv[2]) value2(process.argv[3])  -->
+
+		// <!-- process.argv[2] = this is used in the node console to insert a value in the 3rd spot after the keyword 'node' and the filename -->
+		// <!-- 'process' is an object built into node that has a property that is an array called 'argv' -->
+		// <!-- The first two values in the 'argv' array are the keyword 'node' and the 'filename' then the values you would like to see output an answer -->
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>node-printToNodeConsole</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>
