@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+		function afterConnection() {
+		  connection.query("SELECT * FROM products", function(err, res) {
+		    if (err) throw err;
+		    console.log(res);
+		    connection.end();
+		  });
+		}
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>node-runMySqlQuery</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+	var mysql = require("mysql");
+
+	var connection = mysql.createConnection({
+	  host: "localhost",
+	  port: 3306,
+
+	  // Your username
+	  user: "root",
+
+	  // Your password
+	  password: "",
+	  database: "ice_creamDB"
+	});
+
+	connection.connect(function(err) {
+	  if (err) throw err;
+	  console.log("connected as id " + connection.threadId);
+	  connection.end();
+	});
+
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>node-connectMysqlDB</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>

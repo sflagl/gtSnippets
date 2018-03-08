@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+		// constructor function used to create programmers objects
+		function Programmer(name, position, age, language) {
+		  this.name = name;
+		  this.position = position;
+		  this.age = age;
+		  this.language = language;
+		}
+
+		//The prototype constructor allows you to add new properties and methods to the Array() object.
+
+		//When constructing a property, ALL arrays will be given the property, and its value, as default.
+
+		//When constructing a method, ALL arrays will have this method available.
+
+		//Note: Array.prototype does not refer to a single array, but to the Array() object itself.
+
+		//Note: Prototype is a global object constructor which is available for all JavaScript objects.
+
+		// creates the printInfo method and applies it to all programmer objects
+		Programmer.prototype.printInfo = function() {
+		  console.log("Name: " + this.name + "\nPosition: " + this.position +
+		  "\nAge: " + this.age + "\nLanguages: " + this.language);
+		};
+
+		// new programmer object is initialized to bob and is provided with the variables
+		// necessary to create all of the properties
+		var bob = new Programmer("Bob Smith", "Supreme CodeMaster", 33, "JavaScript");
+
+		// calls the printInfo method for bob to print all of his information to the console
+		bob.printInfo();
+
+]]></content>
+	Optional: Set a tabTrigger to define how to trigger the snippet
+	<tabTrigger>js-PrototypeConstructor</tabTrigger>
+	Optional: Set a scope to limit where the snippet will trigger
+	<scope>source.js</scope>
+</snippet>
